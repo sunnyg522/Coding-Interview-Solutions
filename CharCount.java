@@ -9,6 +9,7 @@ import java.util.*;
 
 public class CharCount{
 
+public static HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 	public static void main(String[] args)
 	{
 		charCount("abdbbbdda", 2);
@@ -18,7 +19,6 @@ public class CharCount{
 	{
 		char[] char_set = new char[s.length()];
 		char_set = s.toCharArray();
-		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 		for(int i = 0; i<s.length(); i++)
 		{
 			if(map.containsKey(char_set[i]))
@@ -34,14 +34,10 @@ public class CharCount{
 				if(map.get(value)>=t)
 				map.put(value, map.get(value)-t);
 			}
-			printCharCount(map);
-		
-
+			printCharCount();
 	}
-	public static void printCharCount(HashMap<Character, Integer> map)
+	public static void printCharCount()
 	{
-		HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
-		hashMap = map;
 		for (Character value : map.keySet())
 			{
 				System.out.print(value+""+map.get(value));
