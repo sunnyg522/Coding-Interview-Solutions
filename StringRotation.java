@@ -16,6 +16,7 @@ public class StringRotation {
 		if(len==s2.length() && len>0)
 		{
 			s1s1 = s1+s1;
+			System.out.println(s1.indexOf(s2));
 			return isSubString(s1s1, s2);
 		}
 		return false;
