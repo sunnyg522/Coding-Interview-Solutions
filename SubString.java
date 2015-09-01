@@ -1,3 +1,5 @@
+//Changind vikram code 
+
 import java.util.*;
 public class SubString
 {
