@@ -1,3 +1,4 @@
+// Changing Dinesh code
 // A man, aplan, a canal, Panama!
 // Write a code that returns if an string is palindrom and it true for above intupt
 
